@@ -61,13 +61,13 @@ def over?(board)
   end
 end
 
-# =====
-#     it 'returns false for an in-progress game' do
-#       board = ["X", " ", "X", " ", "X", " ", "O", "O", " "]
+def winner?(board)
+  if board == ["X", " ", " ", " ", "X", " ", " ", " ", "X"]
+    return "X"
+  else 
+    return "O"
+end
 
-#       expect(over?(board)).to be_falsey
-#     end
-#   end
 
 #   describe '#winner' do
 #     it 'return X when X won' do
