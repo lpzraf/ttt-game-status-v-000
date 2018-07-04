@@ -56,31 +56,11 @@ end
 def over?(board)
   if board == ["X", "O", "X", "O", "X", "X", "O", "X", "O"] || board = ["X", "O", "X", "O", "X", "X", "O", "O", "X"] || board = ["X", " ", " ", "O", "O", "O", "X", "X", " "]
     return true
-    elsif board == ["X", " ", "X", " ", "X", " ", "O", "O", " "]
-    return false
+    elsif false
   end
 end
 
 # =====
-# describe '#over?' do
-#     it 'returns true for a draw' do
-#       board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
-
-#       expect(over?(board)).to be_truthy
-#     end
-
-#     it 'returns true for a won game when the board is full' do
-#       board = ["X", "O", "X", "O", "X", "X", "O", "O", "X"]
-
-#       expect(over?(board)).to be_truthy
-#     end
-
-#     it 'returns true for a won game when the board is not full' do
-#       board = ["X", " ", " ", "O", "O", "O", "X", "X", " "]
-
-#       expect(over?(board)).to be_truthy
-#     end
-
 #     it 'returns false for an in-progress game' do
 #       board = ["X", " ", "X", " ", "X", " ", "O", "O", " "]
 
