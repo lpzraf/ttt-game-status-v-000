@@ -64,24 +64,14 @@ end
 def winner(board)
   if board == ["X", " ", " ", " ", "X", " ", " ", " ", "X"]
     return "X"
-  else 
+  elsif 
     return "O"
+  else
+    return "nil"
   end
 end
 
 
-#   describe '#winner' do
-#     it 'return X when X won' do
-#       board = ["X", " ", " ", " ", "X", " ", " ", " ", "X"]
-
-#       expect(winner(board)).to eq("X")
-#     end
-
-#     it 'returns O when O won' do
-#       board = ["X", "O", " ", " ", "O", " ", " ", "O", "X"]
-
-#       expect(winner(board)).to eq("O")
-#     end
 
 #     it 'returns nil when no winner' do
 #       board = ["X", "O", " ", " ", " ", " ", " ", "O", "X"]
