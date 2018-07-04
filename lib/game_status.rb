@@ -56,6 +56,8 @@ end
 def over?(board)
   if board == ["X", "O", "X", "O", "X", "X", "O", "X", "O"] || board = ["X", "O", "X", "O", "X", "X", "O", "O", "X"] || board = ["X", " ", " ", "O", "O", "O", "X", "X", " "]
     return true
+  elsif board == ["X", " ", "X", " ", "X", " ", "O", "O", " "]
+    return false
   end
 end
 
