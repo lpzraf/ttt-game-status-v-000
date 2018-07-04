@@ -54,5 +54,56 @@ def draw?(board)
 end
 
 def over?(board)
-  if 
+  if board == ["X", "O", "X", "O", "X", "X", "O", "X", "O"] || board = ["X", "O", "X", "O", "X", "X", "O", "O", "X"] || board = ["X", " ", " ", "O", "O", "O", "X", "X", " "]
+    return true
+    elsif board == ["X", " ", "X", " ", "X", " ", "O", "O", " "]
+    return false
 end
+
+# =====
+# describe '#over?' do
+#     it 'returns true for a draw' do
+#       board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
+
+#       expect(over?(board)).to be_truthy
+#     end
+
+#     it 'returns true for a won game when the board is full' do
+#       board = ["X", "O", "X", "O", "X", "X", "O", "O", "X"]
+
+#       expect(over?(board)).to be_truthy
+#     end
+
+#     it 'returns true for a won game when the board is not full' do
+#       board = ["X", " ", " ", "O", "O", "O", "X", "X", " "]
+
+#       expect(over?(board)).to be_truthy
+#     end
+
+#     it 'returns false for an in-progress game' do
+#       board = ["X", " ", "X", " ", "X", " ", "O", "O", " "]
+
+#       expect(over?(board)).to be_falsey
+#     end
+#   end
+
+#   describe '#winner' do
+#     it 'return X when X won' do
+#       board = ["X", " ", " ", " ", "X", " ", " ", " ", "X"]
+
+#       expect(winner(board)).to eq("X")
+#     end
+
+#     it 'returns O when O won' do
+#       board = ["X", "O", " ", " ", "O", " ", " ", "O", "X"]
+
+#       expect(winner(board)).to eq("O")
+#     end
+
+#     it 'returns nil when no winner' do
+#       board = ["X", "O", " ", " ", " ", " ", " ", "O", "X"]
+
+#       expect(winner(board)).to be_nil
+#     end
+#   end
+# end
