@@ -58,6 +58,7 @@ def over?(board)
     return true
     elsif board == ["X", " ", "X", " ", "X", " ", "O", "O", " "]
     return false
+  end
 end
 
 # =====
